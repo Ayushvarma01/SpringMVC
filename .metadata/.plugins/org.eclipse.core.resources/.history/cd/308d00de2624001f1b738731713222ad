@@ -1,0 +1,8 @@
+#Important Database and Hibernate Configuration
+
+#Database Configuration
+jdbc.driverClassName=
+jdbc.url=
+jdbc.username=
+jdbc.password=
+

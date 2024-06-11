@@ -1,0 +1,21 @@
+package com.skill.daoImpl;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.orm.hibernate5.HibernateTemplate;
+
+import com.in.skill.model.Customer;
+import com.skill.dao.CustomerDAO;
+
+public class CustomerDAOImpl implements CustomerDAO{
+
+	@Autowired
+	HibernateTemplate hibernateTemplate;
+
+	@Override
+	public void addCustomer(Customer customer) {
+		// TODO Auto-generated method stub
+		
+	}
+	
+	
+}

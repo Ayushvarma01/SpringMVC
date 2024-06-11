@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="MavenProjectWizardLocationPage">
+		<list key="location">
+			<item value="C:\Users\AYUSH\git\SpringMVC\DemoMVC\src\main\webapp\index.jsp"/>
+			<item value="C:\Users\AYUSH\eclipse-workspace\Spring\Homeweb.com"/>
+			<item value="C:\Users\AYUSH\eclipse-workspace\Spring\first-hibernate"/>
+			<item value="C:\Users\AYUSH\git\SpringMVCSearch\springmvcsearch\src\main\java\springmvcsearch\FileformController.java"/>
+			<item value="C:\Users\AYUSH\eclipse-workspace\Spring\springmvc"/>
+			<item value="C:\Users\AYUSH\eclipse-workspace\Spring"/>
+		</list>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+	</section>
+	<section name="MavenProjectWizardArchetypePage">
+		<item key="catalog" value="internal"/>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+	</section>
+	<section name="Maven2ProjectWizardArchifactPage">
+		<list key="package">
+			<item value="com.in.skill"/>
+			<item value="com.love"/>
+			<item value="com.demo"/>
+			<item value="com.springmvc.SpringMVC"/>
+			<item value="com.springmvc"/>
+			<item value="com.first.hiber"/>
+			<item value="com.spring.search"/>
+		</list>
+		<list key="groupId">
+			<item value="com.in.skill"/>
+			<item value="com.love"/>
+			<item value="com.demo"/>
+			<item value="com.springmvc"/>
+			<item value="hibernate-first-project"/>
+			<item value="com.spring.search"/>
+		</list>
+		<list key="artifactId">
+			<item value="SkillUp"/>
+			<item value="LovaCalculator"/>
+			<item value="loveCalculator"/>
+			<item value="SpringMVC"/>
+			<item value="DemoMVC"/>
+			<item value="com.first.hiber"/>
+			<item value="springmvcsearch"/>
+			<item value="SpringMVC1"/>
+			<item value="springmvc"/>
+		</list>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+		<list key="version">
+			<item value="0.0.1-SNAPSHOT"/>
+		</list>
+	</section>
+	<section name="MavenProjectWizardArtifactPage">
+		<list key="groupId">
+		</list>
+		<list key="name">
+		</list>
+		<list key="artifactId">
+		</list>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+		<list key="version">
+			<item value="0.0.1-SNAPSHOT"/>
+		</list>
+	</section>
+	<section name="org.eclipse.m2e.core.pom.overview">
+	</section>
+	<section name="org.eclipse.m2e.core.pom.dependencies">
+	</section>
+</section>

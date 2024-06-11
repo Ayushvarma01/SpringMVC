@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<modules>
+  <module moduleId="org.eclipse.jst.j2ee.server:DemoMVC" serverId="Tomcat v8.5 Server at localhost"/>
+  <module moduleId="org.eclipse.jst.jee.server:DemoMVC" serverId="Tomcat v8.5 Server at localhost"/>
+  <module moduleId="org.eclipse.jst.j2ee.server:springmvc" serverId="Tomcat v9.0 Server at localhost"/>
+  <module moduleId="org.eclipse.jst.jee.server:Homeweb.com" serverId="Tomcat v9.0 Server at localhost"/>
+  <module moduleId="org.eclipse.jst.j2ee.server:SpringMVC" serverId="Tomcat v8.5 Server at localhost"/>
+  <module moduleId="org.eclipse.jst.jee.server:SkillUp" serverId="Tomcat v10.1 Server at localhost"/>
+  <module moduleId="org.eclipse.jst.j2ee.server:Home.com" serverId="Tomcat v9.0 Server at localhost"/>
+  <module moduleId="org.eclipse.jst.jee.server:loveCalculator1" serverId="Tomcat v10.1 Server at localhost"/>
+  <module moduleId="org.eclipse.jst.j2ee.server:springmvcsearch" serverId="Tomcat v9.0 Server at localhost"/>
+  <module moduleId="org.eclipse.jst.j2ee.server:loveCalculator" serverId="Tomcat v9.0 Server at localhost"/>
+</modules>

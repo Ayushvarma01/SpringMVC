@@ -1,0 +1,13 @@
+package com.skill.dao;
+
+import org.springframework.stereotype.Component;
+
+import com.in.skill.model.Customer;
+
+
+
+@Component
+public interface CustomerDAO {
+
+	public void addCustomer(Customer customer);
+}

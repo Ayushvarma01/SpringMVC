@@ -1,0 +1,51 @@
+package com.in.skill.config;
+
+import org.springframework.cglib.core.ClassLoaderAwareGeneratorStrategy;
+import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.ComponentScan;
+import org.springframework.context.annotation.Configuration;
+import org.springframework.web.servlet.config.annotation.ResourceHandlerRegistry;
+import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
+import org.springframework.web.servlet.view.InternalResourceViewResolver;
+import org.thymeleaf.spring6.SpringTemplateEngine;
+import org.thymeleaf.spring6.view.ThymeleafViewResolver;
+import org.thymeleaf.templateresolver.ClassLoaderTemplateResolver;
+import org.thymeleaf.templateresolver.ITemplateResolver;
+
+@Configuration
+@ComponentScan ("com.in.skill.controller")
+public class myAppConfig implements WebMvcConfigurer{
+
+	public myAppConfig() {
+		System.out.println("myAppConfig");
+	}
+	
+//	InternaleResourceViewResolver only use to resolve jsp page 
+	/*
+	 * @Bean public InternalResourceViewResolver internalResourceViewResolver() {
+	 * //set Prefix and Suffix return new
+	 * InternalResourceViewResolver("/WEB-INF/views/",".html"); }
+	 */
+	
+	/*
+	 * public void addResourceHandlers(ResourceHandlerRegistry registry) {
+	 * registry.addResourceHandler("/resources/**").addResourceLocations(
+	 * "/resources/");
+	 * 
+	 * }
+	 */
+	
+	public ThymeleafViewResolver thymeleafViewResolver() {
+		ThymeleafViewResolver thymeleafViewResolver = new ThymeleafViewResolver();
+		thymeleafViewResolver.setTemplateEngine(null);
+	}
+	
+	public SpringTemplateEngine springTemplateEngine() {
+		SpringTemplateEngine springTemplateEngine = new SpringTemplateEngine();
+		springTemplateEngine.setTemplateResolver(null);
+	}
+	
+	public ITemplateResolver iTemplateResolver() {
+		ClassLoaderTemplateResolver
+	}
+}

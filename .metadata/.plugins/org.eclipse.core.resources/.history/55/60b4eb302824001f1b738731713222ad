@@ -1,0 +1,5 @@
+package com.in.skill.config;
+
+public class ORMConfiguration {
+
+}

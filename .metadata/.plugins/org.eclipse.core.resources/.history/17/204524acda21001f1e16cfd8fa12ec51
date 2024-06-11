@@ -1,0 +1,53 @@
+package com.in.skill.config;
+
+import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.ComponentScan;
+import org.springframework.context.annotation.Configuration;
+import org.springframework.web.servlet.config.annotation.ViewControllerRegistry;
+import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
+import org.thymeleaf.spring6.SpringTemplateEngine;
+import org.thymeleaf.spring6.view.ThymeleafViewResolver;
+import org.thymeleaf.templateresolver.ClassLoaderTemplateResolver;
+import org.thymeleaf.templateresolver.ITemplateResolver;
+
+@Configuration
+@ComponentScan("com.in.skill.controller")
+public class myAppConfig implements WebMvcConfigurer {
+
+    public myAppConfig() {
+        System.out.println("myAppConfig");
+    }
+
+    @Bean
+    public ThymeleafViewResolver thymeleafViewResolver() {
+        ThymeleafViewResolver thymeleafViewResolver = new ThymeleafViewResolver();
+        thymeleafViewResolver.setTemplateEngine(springTemplateEngine());
+        thymeleafViewResolver.setOrder(1);
+        thymeleafViewResolver.setViewNames(new String[] { "*.html" });
+        return thymeleafViewResolver;
+    }
+
+    @Bean
+    public SpringTemplateEngine springTemplateEngine() {
+        SpringTemplateEngine springTemplateEngine = new SpringTemplateEngine();
+        springTemplateEngine.setTemplateResolver(iTemplateResolver());
+        return springTemplateEngine;
+    }
+
+    @Bean
+    public ITemplateResolver iTemplateResolver() {
+        ClassLoaderTemplateResolver resolver = new ClassLoaderTemplateResolver();
+        resolver.setPrefix("/WEB-INF/views/");
+        resolver.setSuffix(".html");
+        resolver.setTemplateMode("HTML");
+        resolver.setCharacterEncoding("UTF-8");
+        resolver.setCacheable(true); // Set to false during development
+        return resolver;
+    }
+
+	/*
+	 * @Override public void addViewControllers(ViewControllerRegistry registry) {
+	 * registry.addViewController("/").setViewName("home"); // Assuming "home.html"
+	 * exists }
+	 */
+}

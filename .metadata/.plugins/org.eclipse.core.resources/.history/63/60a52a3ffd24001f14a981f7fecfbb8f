@@ -1,0 +1,7 @@
+package com.skill.daoImpl;
+
+import com.skill.dao.CustomerDAO;
+
+public class CustomerDAOImpl implements CustomerDAO{
+
+}

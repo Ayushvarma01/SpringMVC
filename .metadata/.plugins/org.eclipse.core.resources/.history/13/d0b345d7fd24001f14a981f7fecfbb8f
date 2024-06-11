@@ -1,0 +1,8 @@
+package com.skill.dao;
+
+import com.in.skill.model.Customer;
+
+public interface CustomerDAO {
+
+	public void addCustomer(Customer customer);
+}

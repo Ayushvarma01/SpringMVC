@@ -1,0 +1,5 @@
+package com.skill.Interface;
+
+public interface CustomerService {
+
+}

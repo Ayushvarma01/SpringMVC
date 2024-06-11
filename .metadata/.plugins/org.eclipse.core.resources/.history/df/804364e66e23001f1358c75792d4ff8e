@@ -1,0 +1,17 @@
+package com.in.skill.model;
+
+import lombok.Data;
+
+@Ent
+public class Login {
+
+	@ID
+	private int Id;
+	
+	
+	private String UserName;
+	
+	
+	private String password;
+	
+}

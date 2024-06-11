@@ -1,0 +1,33 @@
+package com.in.skill.controller;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+import com.skill.dao.CustomerDAO;
+
+@Controller
+public class IndexController {
+
+	@Autowired
+	CustomerDAO customerDAO; 
+	
+	@RequestMapping("/")
+	public String loginPage() {
+		System.out.println("login");
+		return "login";
+	}
+	
+	
+	@RequestMapping("/getlogin")
+	public String getlogin() {
+		System.out.println("getlogin");
+		return "login";
+	}
+	
+	@RequestMapping("/addCust")
+	public String addCust() {
+		System.out.println("getlogin");
+		return "login";
+	}
+}

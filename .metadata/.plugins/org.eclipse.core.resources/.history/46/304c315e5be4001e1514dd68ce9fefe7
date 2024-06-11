@@ -1,0 +1,49 @@
+package springmvc.controller;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.servlet.ModelAndView;
+
+@Controller
+public class HomeController {
+	
+//	@RequestMapping("/")//very first request and return page
+//	public String index() {
+//		 System.out.println("Hello this is Index");
+//		return"index";
+//	}
+	
+	@RequestMapping("/home")
+	public String home(Model model) {
+		model.addAttribute("name","Ayush");
+		System.out.println("Hello this is Home");
+		return"home";
+	}
+	
+	@RequestMapping("/login")
+	public String login() {
+		System.out.println("Hello this is Login");
+		return "login";
+	}
+
+	@RequestMapping("/help")
+	public ModelAndView help() {
+		System.out.println("Hello this is Login");
+		ModelAndView modelAndView = new ModelAndView();
+		modelAndView.addObject("name","Ayush H");
+		modelAndView.addObject("id","21");
+		List<String> item = new ArrayList<String>();
+		item.add("A");
+		item.add("B");
+		item.add("C");
+		item.add("D");
+		modelAndView.addObject("i","item");
+		
+		modelAndView.setViewName("help");
+		return modelAndView;
+	}
+}

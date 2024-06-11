@@ -1,0 +1,28 @@
+package com.in.skill.config;
+
+import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.ComponentScan;
+import org.springframework.context.annotation.Configuration;
+import org.springframework.web.servlet.config.annotation.ResourceHandlerRegistry;
+import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
+import org.springframework.web.servlet.view.InternalResourceViewResolver;
+
+@Configuration
+@ComponentScan ("com.in.skill.controller")
+public class myAppConfig implements WebMvcConfigurer{
+
+	public myAppConfig() {
+		System.out.println("myAppConfig");
+	}
+
+	@Bean
+	public InternalResourceViewResolver internalResourceViewResolver() {
+		//set Prefix and Suffix
+		return new InternalResourceViewResolver("/WEB-INF/views/",".html");
+	}
+	
+	public void addResourceHandlers(ResourceHandlerRegistry registry) {
+		registry.addResourceHandler("/resources/**").addResourceLocations("/resources/");
+		
+	}
+}

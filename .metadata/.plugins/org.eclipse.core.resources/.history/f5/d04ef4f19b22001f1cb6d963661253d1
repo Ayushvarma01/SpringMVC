@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style>
+html {
+	background-color: black;
+	color:white;
+}
+</style>
+</head>
+<body>
+	<h1>This Is html Home.</h1>
+</body>
+</html>

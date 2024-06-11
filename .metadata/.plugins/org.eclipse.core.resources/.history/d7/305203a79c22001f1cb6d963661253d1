@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style>
+html {
+	background-color: black;
+	color:white;
+}
+</style>
+</head>
+<body>
+	<h1 align="center">Welcome.</h1>
+	<h2 align="center">Please log In.</h2>
+</body>
+</html>
