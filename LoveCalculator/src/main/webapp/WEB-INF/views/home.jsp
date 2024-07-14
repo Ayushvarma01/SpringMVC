@@ -11,12 +11,12 @@
 		<form action="process-homepage" method="post">
 			<div>
 				<lable for="yn">Your Name:</lable>
-				<input type="text" id="yn" name="userName" value="Ayush">
+				<input type="text" id="yn" name="userName" value="yourName">
 			</div>
 			<br>
 			<div>
 				<lable for="cn">Crush Name:</lable>
-				<input type="text" id="cn" name="crushName" value="sakshi">
+				<input type="text" id="cn" name="crushName" value="crushName">
 			</div>
 			<br>
 			<button type="submit">Submit</button>
